@@ -1,0 +1,2 @@
+com/qase/qa/pages/FirstTest.java
+ com.qase.qa.pages.FirstTest
