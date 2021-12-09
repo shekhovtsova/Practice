@@ -1,22 +1,33 @@
 package com.qase.qa.pages;
 
-import static com.codeborne.selenide.Selenide.$;
+import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.support.FindBy;
+
 import static com.codeborne.selenide.Selenide.page;
 
 public class LoginPage {
-    public void enterLogin(String login) {
-        $(UIMap.login).click();
-        $(UIMap.login).clear();
-        $(UIMap.login).sendKeys(login);
+    @FindBy(id = "inputEmail")
+    public SelenideElement login;
+    @FindBy(id = "inputPassword")
+    public SelenideElement password;
+    @FindBy(id = "btnLogin")
+    public SelenideElement btn;
+
+
+
+    public void enterLogin(String name) {
+        login.click();
+        login.clear();
+        login.sendKeys(name);
     }
 
-    public void enterPassword(String password) {
-        $(UIMap.password).click();
-        $(UIMap.password).clear();
-        $(UIMap.password).sendKeys(password);
+    public void enterPassword(String pass) {
+        password.click();
+        password.clear();
+        password.sendKeys(pass);
     }
-    public Dashboard clickLoginBtn() {
-        $(UIMap.button).click();
-        return page(Dashboard.class);
+    public DashboardPage clickLoginBtn() {
+        btn.click();
+        return page(DashboardPage.class);
     }
 }

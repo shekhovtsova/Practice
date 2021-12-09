@@ -1,6 +1,6 @@
+com/qase/qa/pages/WorkSpacePage.java
+ com.qase.qa.pages.WorkSpacePage
+com/qase/qa/pages/DashboardPage.java
+ com.qase.qa.pages.DashboardPage
 com/qase/qa/pages/LoginPage.java
  com.qase.qa.pages.LoginPage
-com/qase/qa/pages/UIMap.java
- com.qase.qa.pages.UIMap
-com/qase/qa/pages/Dashboard.java
- com.qase.qa.pages.Dashboard
