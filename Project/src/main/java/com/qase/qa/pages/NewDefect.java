@@ -2,7 +2,6 @@ package com.qase.qa.pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
 
 public class NewDefect {
@@ -31,7 +30,5 @@ public class NewDefect {
     public void setPriority() {
         priority.click();
         criticalPriority.click();
-        criticalPriority.findElement(By.id("react-select-15-option-2")).click();
-        actualResult.click();
     }
 }
