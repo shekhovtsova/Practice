@@ -13,8 +13,9 @@ public class DashboardPage {
     @FindBy(xpath = "//div[@id='app']/div/div/div/div/ul/li[3]/a/span")
     public SelenideElement linkWorkSpace;
 
-    @FindBy(linkText = "Sign out")
-    public SelenideElement ex;
+    @FindBy (xpath = "/html//div[@id='react-app']/div[@class='app']/div[@class='container-fluid']//table//tr[@class='project-row']/td[3]/div[1]/a[@href='/project/DEMO']")
+    public SelenideElement openProject;
+
 
     public void checkDashboardPage() {
 
@@ -26,8 +27,9 @@ public class DashboardPage {
         return page(WorkSpacePage.class);
     }
 
-    public void exit() {
-        submit.click();
-        ex.click();
+    public ProjectPage openProjectPage() {
+        openProject.click();
+        return page(ProjectPage.class);
     }
+
 }
