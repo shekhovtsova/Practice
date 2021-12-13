@@ -1,5 +1,11 @@
 com/qase/qa/pages/WorkSpacePage.java
  com.qase.qa.pages.WorkSpacePage
+com/qase/qa/pages/util/LoginData.java
+ com.qase.qa.pages.util.LoginData
+com/qase/qa/pages/util/CardData.java
+ com.qase.qa.pages.util.CardData
+com/qase/qa/pages/NewDefect.java
+ com.qase.qa.pages.NewDefect
 com/qase/qa/pages/DefectPage.java
  com.qase.qa.pages.DefectPage
 com/qase/qa/pages/DashboardPage.java
@@ -8,5 +14,3 @@ com/qase/qa/pages/LoginPage.java
  com.qase.qa.pages.LoginPage
 com/qase/qa/pages/ProjectPage.java
  com.qase.qa.pages.ProjectPage
-com/qase/qa/pages/NewDefect.java
- com.qase.qa.pages.NewDefect
